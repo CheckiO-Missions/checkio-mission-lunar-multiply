@@ -1,0 +1,51 @@
+<!-- Describe task in general -->
+
+<p>
+    这个问题的灵感来自于另一个有趣的<span>Numberphile</span> 视频<span>“Primes on the Moon”</span> ，<span>Neil Sloane</span> ，你应该先看看这个视频，了解这种古怪的 "月球算术 "是如何运作的。  
+</p>
+
+<p style="text-align: center">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/cZkGeR9CWbk?si=-mn4sSf25zNgZ7up" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</p>
+
+<p style="text-align: justify;">
+    自然数的加法和乘法以前被称为 "凄惨算术"，它们被重新定义，两位数<strong>相加</strong>意味着取其<strong>最大值</strong>，而两位数<strong>相乘</strong>则意味着取其<strong>最小值</strong>。例如，<code>2 + 7 = 7 + 2 = 7</code> 和<code>2 × 7 = 7 × 2 = 2</code> 。与普通加法不同的是，无论下一列中的个位数相加多少，都不会有进位。对于由多位数组成的数字，加法和乘法的运算方法与小学时所学的完全相同，只是个位数月乘法的移位数列是以同样疯狂的方式相加的。让我们再来看看这个例子：
+</p>
+
+<p style="text-align: center;">
+    <img  title="example" src="{{MEDIA}}lunar-multiply.png" alt="example" style="max-height: 400px"/>
+</p>
+
+<!-- Explain input and output values -->
+<p>
+   <strong>输入</strong>两个整数 <span>({% if is_js %}number{% else %}int{% endif %})</span>.
+</p>
+
+<p>
+   <strong>输出：</strong>整数 <span>({% if is_js %}number{% else %}int{% endif %})</span>. 
+</p>
+
+
+<p>
+    <strong>示例</strong>
+</p>
+
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+
+<p><i>任务摘自 Python CCPS 109。该课程由张瑞敏继续教育学院教授。<a href="https://github.com/ikokkari">Ilkka Kokkarinen</a></i></p>
+<!-- Here you can explain how it can be used in development -->
+<!-- The section is optional -->
+<!-- <p class="for_info_only">
+
+    <strong>How it’s used:</strong>
+    <i>(math is used everywhere)</i>
+</p> -->
+
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<!-- <p>
+    <strong>Preconditions:</strong>
+    <ul>
+    <li><i>both given ints should be between -1000 and 1000</i></li>
+    </ul>
+</p> -->

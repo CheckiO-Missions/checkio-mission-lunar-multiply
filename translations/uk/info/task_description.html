@@ -1,0 +1,51 @@
+<!-- Describe task in general -->
+
+<p>
+    Ця задача була натхненна іншим веселим <span>Numberphile</span> відео <span>“Primes on the Moon”</span> від <span>Neil Sloane</span>, яке вам варто подивитися спочатку, щоб отримати уявлення про те, як працює ця божевільна "місячна арифметика".  
+</p>
+
+<p style="text-align: center">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/cZkGeR9CWbk?si=-mn4sSf25zNgZ7up" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</p>
+
+<p style="text-align: justify;">
+    Раніше відома як "похмура арифметика", додавання і множення натуральних чисел переосмислюється таким чином, що <strong>додавання</strong> двох цифр означає отримання їх <strong>максимуму</strong>, тоді як <strong>множення</strong> двох цифр означає отримання їх <strong>мінімуму</strong>. Наприклад, <code>2 + 7 = 7 + 2 = 7</code> та <code>2 × 7 = 7 × 2 = 2</code>. На відміну від звичайного додавання, ніколи не може бути перенесення до наступного стовпчика цифр, незалежно від того, скільки окремих цифр додається у цьому стовпчику. Для чисел, які складаються з декількох цифр, додавання і множення працюють точно так, як ви вивчали ще в початковій школі, за винятком того, що зміщені стовпчики цифр від місячного множення окремих цифр додаються таким же божевільним чином. Давайте знову подивимось на приклад:
+</p>
+
+<p style="text-align: center;">
+    <img  title="example" src="{{MEDIA}}lunar-multiply.png" alt="example" style="max-height: 400px"/>
+</p>
+
+<!-- Explain input and output values -->
+<p>
+   <strong>Вхідні дані:</strong> Два цілих числа <span>({% if is_js %}number{% else %}int{% endif %})</span>.
+</p>
+
+<p>
+   <strong>Вихідні дані:</strong> Ціле число <span>({% if is_js %}number{% else %}int{% endif %})</span>. 
+</p>
+
+
+<p>
+    <strong>Приклади:</strong>
+</p>
+
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+
+<p><i>Місія була взята з Python CCPS 109. Його викладають у Ryerson Chang School of Continuing Education <a href="https://github.com/ikokkari">Ilkka Kokkarinen</a></i></p>
+<!-- Here you can explain how it can be used in development -->
+<!-- The section is optional -->
+<!-- <p class="for_info_only">
+
+    <strong>How it’s used:</strong>
+    <i>(math is used everywhere)</i>
+</p> -->
+
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<!-- <p>
+    <strong>Preconditions:</strong>
+    <ul>
+    <li><i>both given ints should be between -1000 and 1000</i></li>
+    </ul>
+</p> -->

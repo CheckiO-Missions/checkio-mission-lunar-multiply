@@ -1,0 +1,51 @@
+<!-- Describe task in general -->
+
+<p>
+    Ten problem został zainspirowany innym jowialnym filmem <span>Numberphile</span> <span>“Primes on the Moon”</span> przez <span>Neil Sloane</span>, który powinni Państwo najpierw obejrzeć, aby dowiedzieć się, jak działa ta zwariowana "księżycowa arytmetyka".  
+</p>
+
+<p style="text-align: center">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/cZkGeR9CWbk?si=-mn4sSf25zNgZ7up" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</p>
+
+<p style="text-align: justify;">
+    Dawniej znana jako "ponura arytmetyka", dodawanie i mnożenie liczb naturalnych zostało przedefiniowane w taki sposób, że <strong>dodanie</strong> dwóch cyfr oznacza wzięcie ich <strong>maksimum</strong>, podczas gdy <strong>mnożenie</strong> dwóch cyfr oznacza wzięcie ich <strong>minimum</strong>. Na przykład <code>2 + 7 = 7 + 2 = 7</code> i <code>2 × 7 = 7 × 2 = 2</code>. W przeciwieństwie do zwykłego dodawania, nigdy nie może wystąpić przeniesienie do następnej kolumny cyfr, bez względu na to, ile pojedynczych cyfr jest dodawanych razem w tej kolumnie. W przypadku liczb, które składają się z kilku cyfr, dodawanie i mnożenie działają dokładnie tak, jak nauczyli się Państwo w szkole podstawowej, z wyjątkiem tego, że przesunięte kolumny cyfr z mnożenia księżycowego poszczególnych cyfr są dodawane w ten sam szalony sposób. Proszę spojrzeć jeszcze raz na przykład:
+</p>
+
+<p style="text-align: center;">
+    <img  title="example" src="{{MEDIA}}lunar-multiply.png" alt="example" style="max-height: 400px"/>
+</p>
+
+<!-- Explain input and output values -->
+<p>
+   <strong>Wejście:</strong> Dwie liczby całkowite <span>({% if is_js %}number{% else %}int{% endif %})</span>.
+</p>
+
+<p>
+   <strong>Wyjście:</strong> Liczba całkowita <span>({% if is_js %}number{% else %}int{% endif %})</span>. 
+</p>
+
+
+<p>
+    <strong>Przykłady:</strong>
+</p>
+
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+
+<p><i>Misja została zaczerpnięta z Python CCPS 109. Jest on prowadzony dla Ryerson Chang School of Continuing Education przez <a href="https://github.com/ikokkari">Ilkka Kokkarinen</a></i></p>
+<!-- Here you can explain how it can be used in development -->
+<!-- The section is optional -->
+<!-- <p class="for_info_only">
+
+    <strong>How it’s used:</strong>
+    <i>(math is used everywhere)</i>
+</p> -->
+
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<!-- <p>
+    <strong>Preconditions:</strong>
+    <ul>
+    <li><i>both given ints should be between -1000 and 1000</i></li>
+    </ul>
+</p> -->

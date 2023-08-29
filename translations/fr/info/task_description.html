@@ -1,0 +1,51 @@
+<!-- Describe task in general -->
+
+<p>
+    Ce problème a été inspiré par une autre vidéo joviale <span>Numberphile</span> <span>“Primes on the Moon”</span> by <span>Neil Sloane</span> que vous devriez regarder en premier pour vous faire une idée du fonctionnement de cette "arithmétique lunaire" farfelue.  
+</p>
+
+<p style="text-align: center">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/cZkGeR9CWbk?si=-mn4sSf25zNgZ7up" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</p>
+
+<p style="text-align: justify;">
+    Autrefois appelée "arithmétique lugubre", l'addition et la multiplication des nombres naturels sont redéfinies de telle sorte qu'<strong>ajouter</strong> deux chiffres revient à prendre leur <strong>maximum</strong>, tandis que <strong>multiplier</strong> deux chiffres revient à prendre leur <strong>minimum</strong>. Par exemple, <code>2 + 7 = 7 + 2 = 7</code> et <code>2 × 7 = 7 × 2 = 2</code>. Contrairement à l'addition ordinaire, il ne peut jamais y avoir de report à la colonne de chiffres suivante, quel que soit le nombre de chiffres individuels additionnés dans cette colonne. Pour les nombres composés de plusieurs chiffres, l'addition et la multiplication fonctionnent exactement comme vous l'avez appris à l'école primaire, sauf que les colonnes de chiffres décalés résultant de la multiplication lunaire des chiffres individuels sont ajoutées de la même manière lunatique. Reprenons l'exemple:
+</p>
+
+<p style="text-align: center;">
+    <img  title="example" src="{{MEDIA}}lunar-multiply.png" alt="example" style="max-height: 400px"/>
+</p>
+
+<!-- Explain input and output values -->
+<p>
+   <strong>Entrée:</strong> Deux nombres entiers <span>({% if is_js %}number{% else %}int{% endif %})</span>.
+</p>
+
+<p>
+   <strong>Sortie:</strong> Entier <span>({% if is_js %}number{% else %}int{% endif %})</span>. 
+</p>
+
+
+<p>
+    <strong>Exemples:</strong>
+</p>
+
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+
+<p><i>La mission a été tirée de Python CCPS 109. Il est enseigné pour l'école d'éducation permanente Ryerson Chang par <a href="https://github.com/ikokkari">Ilkka Kokkarinen</a></i></p>
+<!-- Here you can explain how it can be used in development -->
+<!-- The section is optional -->
+<!-- <p class="for_info_only">
+
+    <strong>How it’s used:</strong>
+    <i>(math is used everywhere)</i>
+</p> -->
+
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<!-- <p>
+    <strong>Preconditions:</strong>
+    <ul>
+    <li><i>both given ints should be between -1000 and 1000</i></li>
+    </ul>
+</p> -->

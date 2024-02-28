@@ -1,0 +1,51 @@
+<!-- Describe task in general -->
+
+<p>
+    Dieses Problem wurde von einem anderen lustigen <span>Numberphile</span> Video <span>“Primes on the Moon”</span> von <span>Neil Sloane</span> inspiriert, das Sie sich zuerst ansehen sollten, um eine Vorstellung davon zu bekommen, wie diese verrückte "Mondarithmetik" funktioniert.  
+</p>
+
+<p style="text-align: center">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/cZkGeR9CWbk?si=-mn4sSf25zNgZ7up" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</p>
+
+<p style="text-align: justify;">
+    Früher als "düstere Arithmetik" bekannt, werden Addition und Multiplikation natürlicher Zahlen so umdefiniert, dass die <strong>Addition</strong> zweier Ziffern deren <strong>Maximum</strong> bedeutet, während die <strong>Multiplikation</strong> zweier Ziffern deren <strong>Minimum</strong> bedeutet. Zum Beispiel: <code>2 + 7 = 7 + 2 = 7</code> und <code>2 × 7 = 7 × 2 = 2</code>. Anders als bei der gewöhnlichen Addition kann es nie einen Übertrag zur nächsten Zahlenkolonne geben, egal wie viele einzelne Ziffern in dieser Kolonne addiert werden. Bei Zahlen, die aus mehreren Ziffern bestehen, funktionieren Addition und Multiplikation genau so, wie Sie es in der Grundschule gelernt haben, mit der Ausnahme, dass die verschobenen Ziffernspalten aus der Mondmultiplikation der einzelnen Ziffern auf die gleiche verrückte Weise addiert werden. Schauen wir uns noch einmal das Beispiel an:
+</p>
+
+<p style="text-align: center;">
+    <img  title="example" src="{{MEDIA}}lunar-multiply.png" alt="example" style="max-height: 400px"/>
+</p>
+
+<!-- Explain input and output values -->
+<p>
+   <strong>Eingabe:</strong> Zwei ganze Zahlen <span>({% if is_js %}number{% else %}int{% endif %})</span>.
+</p>
+
+<p>
+   <strong>Ausgabe:</strong> Ganzzahl <span>({% if is_js %}number{% else %}int{% endif %})</span>. 
+</p>
+
+
+<p>
+    <strong>Beispiele:</strong>
+</p>
+
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+
+<p><i>Die Aufgabe wurde aus Python CCPS 109 übernommen. Sie wird für die Ryerson Chang School of Continuing Education unterrichtet von <a href="https://github.com/ikokkari">Ilkka Kokkarinen</a></i></p>
+<!-- Here you can explain how it can be used in development -->
+<!-- The section is optional -->
+<!-- <p class="for_info_only">
+
+    <strong>How it’s used:</strong>
+    <i>(math is used everywhere)</i>
+</p> -->
+
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<!-- <p>
+    <strong>Preconditions:</strong>
+    <ul>
+    <li><i>both given ints should be between -1000 and 1000</i></li>
+    </ul>
+</p> -->
